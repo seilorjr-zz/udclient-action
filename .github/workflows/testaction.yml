@@ -5,10 +5,10 @@ on:
   
 jobs:
   build:
-    name: call udclient cli  
+    name: test udclient cli  
     runs-on: ubuntu-latest   
     steps:
-     - name: Validate policies
+     - name: call udclient
        uses: seilorjr/udclient-action@main
        with:
         command: |
