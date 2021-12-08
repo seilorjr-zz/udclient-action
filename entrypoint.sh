@@ -1,5 +1,5 @@
 #!/bin/sh -l
-#java -jar udclient.jar $1
+echo $1
 if [ -n "$JAVA_HOME" ]; then
     # change the dir to the root of the client directory
     SHELL_NAME="$0"
