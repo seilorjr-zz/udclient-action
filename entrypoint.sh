@@ -1,2 +1,2 @@
 #!/bin/sh -l
-java $1
+java -jar udclient.jar $1
