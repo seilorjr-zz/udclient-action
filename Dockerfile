@@ -8,6 +8,7 @@ RUN  apk update \
 
 ADD ./cli /app
 COPY entrypoint.sh /app
+RUN chmod +x /app/entrypoint.sh
 WORKDIR /app
 
 VOLUME /files
