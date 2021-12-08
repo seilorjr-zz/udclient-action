@@ -7,7 +7,8 @@ RUN  apk update \
   && mkdir /app
 
 ADD ./cli /app
-
+COPY entrypoint.sh /app
 WORKDIR /app
 
 VOLUME /files
+ENTRYPOINT ["/app/entrypoint.sh"]
