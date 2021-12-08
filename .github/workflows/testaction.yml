@@ -12,4 +12,5 @@ jobs:
        uses: seilorjr/udclient-action@main
        with:
         command: --weburl www.test.com --username user --password xxxxxxxx 
+       continue-on-error: true 
            
