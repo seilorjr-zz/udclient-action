@@ -14,7 +14,7 @@ if [ -n "$JAVA_HOME" ]; then
     jarfile="$SHELL_PATH/udclient.jar"
     
     if [ -r "$jarfile" ]; then
-        "$javacmd" $JAVA_OPTS -jar "$jarfile" "$1"
+        "$javacmd" $JAVA_OPTS -jar "$jarfile" "$0" $1
     else
         echo "Didn't find $jarfile in directory ${SHELL_PATH}"
         exit 1
