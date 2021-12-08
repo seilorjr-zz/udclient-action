@@ -1,0 +1,14 @@
+name: 'udclient-action'
+description: 'Runs udclient cli'
+branding:
+  icon: 'command'
+  color: 'red'
+inputs:
+  command:
+    description: 'udclient command to run'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
