@@ -6,7 +6,7 @@ RUN  apk update \
   && rm -rf /var/cache/apk/* \
   && mkdir /app
 
-ADD ./installer /app
+ADD ./cli /app
 
 WORKDIR /app
 
