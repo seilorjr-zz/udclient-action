@@ -1,10 +1,6 @@
-FROM alpine:latest
+FROM adoptopenjdk/openjdk11
 
-RUN  apk update \
-  && apk upgrade \
-  && apk add --update openjdk11 tzdata curl unzip bash \
-  && rm -rf /var/cache/apk/* \
-  && mkdir /app
+RUN mkdir /app
 
 ADD ./cli /app
 
