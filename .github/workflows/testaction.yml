@@ -11,5 +11,5 @@ jobs:
      - name: call udclient
        uses: seilorjr/udclient-action@main
        with:
-        command: -jar udclient.jar
+        command: -jar /app/udclient.jar
            
