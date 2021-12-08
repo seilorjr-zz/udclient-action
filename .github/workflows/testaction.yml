@@ -12,4 +12,4 @@ jobs:
        uses: seilorjr/udclient-action@main
        with:
         command: |
-          java -jar udclient.jar --weburl ${{env.WEBURL}} --username ${{env.UDUSER}} --password ${{env.UDPASSWROD}}  createVersion --component lala --name 1.0
+          java 
