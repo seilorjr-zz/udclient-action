@@ -1,0 +1,15 @@
+name : test-action 
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+    name: call udclient cli  
+    runs-on: ubuntu-latest   
+    steps:
+     - name: Validate policies
+      uses: seilorjr/udclient-action@main
+      with:
+        command: |
+          java -jar udclient.jar --weburl ${{env.WEBURL}} --username ${{env.UDUSER}} --password ${{env.UDPASSWROD}}  createVersion --component lala --name 1.0
